@@ -64,6 +64,7 @@ ul {
   height: 86%;
 }
 
+/* --nav-- */
 .nav {
   display: flex;
   align-items: center;
@@ -164,7 +165,8 @@ ul {
 .header-right {
   max-width: 50%;
 }
-/* header brands */
+
+/* --header brands-- */
 .header__brands {
   margin-top: 9rem;
   display: flex;

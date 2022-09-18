@@ -103,6 +103,131 @@ ul {
   transform: scale(1.1);
 }
 
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+  width: 25rem;
+  position: fixed;
+  background-color: rgba(21, 21, 21, 97%);
+  top: 0;
+  bottom: 0;
+  left: -25rem;
+  transition: all 150ms ease-in;
+}
+
+.mobile-nav-list {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.mobile-nav-list__item {
+  margin-bottom: 2rem;
+}
+
+.mobile-nav-list__item:last-child {
+  margin-bottom: 4rem;
+}
+
+.mobile-nav-list__link {
+  color: var(--white);
+  display: block;
+  width: fit-content;
+}
+
+.mobile-nav-list__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.5rem;
+  border-radius: 2rem;
+  background-color: var(--secondary-color);
+  transition: all 200ms ease-in;
+  margin-top: 0.3rem;
+}
+
+.mobile-nav-list__link:hover::after {
+  width: 100%;
+}
+
+.mobile-nav__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-nav__link {
+  border: 0.2rem solid var(--white);
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--white);
+  height: 4.5rem;
+  width: fit-content;
+  flex-grow: 1;
+  margin: 0 1rem 0 1rem;
+  font-family: var(--open-sans-sb);
+  transition: all 250ms ease-in;
+}
+
+.mobile-nav__link:hover {
+  box-shadow: 0rem 0rem 1.5rem var(--white);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* --Hamburger Menu-- */
+.nav-ham-menu {
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: transparent;
+  border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-ham-menu__line {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  position: relative;
+  transition: all 150ms ease-in;
+}
+
+.nav-ham-menu__line::before,
+.nav-ham-menu__line::after {
+  content: "";
+  display: block;
+  width: 3.6rem;
+  height: 0.3rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  position: absolute;
+  transition: all 200ms ease-in;
+}
+
+.nav-ham-menu__line::before {
+  top: -1.1rem;
+}
+
+.nav-ham-menu__line::after {
+  top: 1.1rem;
+}
+
+.nav-ham-menu--open .nav-ham-menu__line {
+  background-color: transparent;
+}
+
+.nav-ham-menu--open .nav-ham-menu__line::before {
+  transform: rotate(45deg) translateY(1.5rem);
+  width: 3.9rem;
+}
+
+.nav-ham-menu--open .nav-ham-menu__line::after {
+  transform: rotate(-45deg) translateY(-1.5rem);
+  width: 3.9rem;
+}
 /* --header contents-- */
 .header__contents {
   display: flex;

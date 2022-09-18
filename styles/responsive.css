@@ -1,15 +1,29 @@
 @media (max-width: 1400px) {
-
 }
 @media (max-width: 1200px) {
-
 }
 @media (max-width: 992px) {
-
 }
 @media (max-width: 768px) {
+  /* ---Header Responsive--- */
 
+  /* --Nav Responsive-- */
+  .nav-list,
+  .nav__link {
+    display: none;
+  }
+
+  .nav-ham-menu {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav--open {
+    left: 0;
+  }
 }
 @media (max-width: 576px) {
-
 }

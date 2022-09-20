@@ -1,12 +1,87 @@
 @media (max-width: 1400px) {
 }
 @media (max-width: 1200px) {
+  /* Header Content Responsive */
+  .header-right__wrapper {
+    width: 44rem;
+  }
+
+  .header-left__title {
+    font-size: 4.2rem;
+    max-width: 34rem;
+  }
+
+  .header-left__description {
+    font-size: 1.5rem;
+    max-width: 34rem;
+  }
+
+  .header-left__link:first-child {
+    width: 19rem;
+    font-size: 1.5rem;
+  }
+
+  .header-left__link:last-child {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 992px) {
+  /* --Nav Responsive-- */
+  .nav__link,
+  .nav-list__link {
+    font-size: 1.5rem;
+  }
+
+  /* Header Content Responsive */
+  .header {
+    height: 125vh;
+  }
+
+  .header__contents {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  .header-right,
+  .header-left {
+    max-width: none;
+  }
+
+  .header-right__wrapper {
+    width: 42rem;
+    margin-bottom: 4rem;
+  }
+
+  .header-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left__title {
+    max-width: 49rem;
+    font-size: 3.8rem;
+  }
+
+  .header-left__description {
+    font-size: 1.4rem;
+    max-width: 37rem;
+  }
+
+  .header-left__link:first-child {
+    width: 16rem;
+    font-size: 1.4rem;
+  }
+
+  .header-left__link:last-child {
+    width: 14rem;
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 768px) {
-  /* ---Header Responsive--- */
-
   /* --Nav Responsive-- */
   .nav-list,
   .nav__link {
@@ -24,6 +99,55 @@
   .mobile-nav--open {
     left: 0;
   }
+
+  /* Header Content Responsive */
+  .header-right__wrapper {
+    width: 40rem;
+  }
+
+  .header-left__title {
+    font-size: 3.4rem;
+    max-width: 47rem;
+  }
 }
 @media (max-width: 576px) {
+  /* Header Content Responsive */
+  .header-right__wrapper {
+    width: 35rem;
+  }
+
+  .header-left__title {
+    font-size: 3.2rem;
+    max-width: 38rem;
+  }
+
+  .header-left__description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Header Content Responsive */
+  .header-right__wrapper {
+    width: 100%;
+    max-width: 35rem;
+  }
+
+  .header-left__title {
+    max-width: 26rem;
+  }
+
+  .header-left__description {
+    max-width: 30rem;
+  }
+
+  .header-left__link:first-child {
+    width: 14rem;
+    font-size: 1.3rem;
+  }
+
+  .header-left__link:last-child {
+    width: 12rem;
+    font-size: 1.3rem;
+  }
 }

@@ -1,4 +1,8 @@
 @media (max-width: 1400px) {
+  /* Customer Call Center Responsive */
+  .customer-call-center__contents-option {
+    font-size: 1.9rem;
+  }
 }
 @media (max-width: 1200px) {
   /* Header Content Responsive */
@@ -103,6 +107,35 @@
 
   .testimonials-box__title {
     font-size: 2.2rem;
+  }
+
+  /* Customer Call Center Responsive */
+  .customer-call-center__contents-option {
+    font-size: 1.8rem;
+    width: 43rem;
+  }
+
+  .customer-call-center__contents-title {
+    font-size: 3rem;
+    max-width: 41rem;
+  }
+
+  /* Blog Responsive */
+  .blog__upper-title {
+    max-width: 73rem;
+    font-size: 4.2rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    font-size: 1.7rem;
+  }
+
+  .blog__cards-posts {
+    margin-bottom: 4rem;
+  }
+
+  .blog__cards-posts:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 992px) {
@@ -253,6 +286,40 @@
   .testimonials-box__title {
     font-size: 2rem;
   }
+
+  /* Customer Call Center Responsive */
+  .customer-call-center {
+    margin-bottom: 12rem;
+  }
+
+  .customer-call-center__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer-call-center__contents-title {
+    text-align: center;
+    max-width: 46rem;
+  }
+
+  .customer-call-center__contents-options {
+    margin-top: 3rem;
+  }
+
+  /* Blog Responsive */
+  .blog__upper-title {
+    max-width: 66rem;
+    font-size: 3.8rem;
+  }
+
+  .blog__upper-intro {
+    font-size: 1.8rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    width: 19rem;
+    font-size: 1.6rem;
+  }
 }
 @media (max-width: 768px) {
   /* --Nav Responsive-- */
@@ -306,6 +373,41 @@
 
   .testimonials-box__title {
     font-size: 1.9rem;
+  }
+
+  /* Customer Call Center Responsive */
+  .customer-call-center__contents-title {
+    max-width: 42rem;
+    font-size: 2.8rem;
+  }
+
+  .customer-call-center__contents-option {
+    width: 40rem;
+    font-size: 1.6rem;
+  }
+
+  /* Blog Responsive */
+  .blog__upper-title {
+    max-width: 47rem;
+    font-size: 3.4rem;
+  }
+
+  .blog__cards-wrapper {
+    margin-bottom: 6rem;
+  }
+
+  .blog__cards-posts-comment {
+    font-size: 1.8rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    width: 18rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    width: 17rem;
+    height: 5.8rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 576px) {
@@ -447,6 +549,67 @@
   .testimonials-box-user-informations__id {
     font-size: 1.3rem;
   }
+
+  /* Customer Call Center Responsive */
+  .customer-call-center__contents {
+    margin-top: 4rem;
+  }
+
+  .customer-call-center__img-holder {
+    max-width: 40rem;
+    width: 100%;
+  }
+
+  .customer-call-center__contents-title {
+    text-align: center;
+    font-size: 2.5rem;
+    max-width: 34rem;
+  }
+
+  .customer-call-center__contents-option {
+    width: 30rem;
+    font-size: 1.31rem;
+  }
+
+  .customer-call-center__contents-option svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Blog Responsive */
+  .blog__upper-title {
+    max-width: 37rem;
+    font-size: 2.7rem;
+  }
+
+  .blog__upper-intro {
+    font-size: 1.7rem;
+  }
+
+  .blog__cards-posts {
+    width: 28rem;
+  }
+
+  .blog__cards-posts-datetyp-categories,
+  .blog__cards-posts-datetyp-date {
+    font-size: 1.5rem;
+  }
+
+  .blog__cards-posts-comment {
+    font-size: 1.7rem;
+  }
+
+  .blog__cards-posts-user-id {
+    font-size: 1.5rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    width: 16rem;
+  }
+
+  .blog__upper-texts {
+    margin-bottom: 6rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -570,5 +733,50 @@
 
   .testimonials-box-user-informations__id {
     font-size: 1.25rem;
+  }
+
+  /* Customer Call Center Responsive */
+  .customer-call-center__contents-title {
+    font-size: 2.3rem;
+    max-width: 27rem;
+  }
+
+  .customer-call-center__contents-options {
+    width: 100%;
+  }
+
+  .customer-call-center__contents-option {
+    max-width: 30rem;
+    width: 100%;
+  }
+
+  /* Blog Responsive */
+  .blog__upper-title {
+    max-width: 25rem;
+    font-size: 2.5rem;
+  }
+
+  .blog__cards-posts {
+    width: 100%;
+    max-width: 27rem;
+  }
+
+  .blog__cards-posts-datetyp-categories,
+  .blog__cards-posts-datetyp-date {
+    font-size: 1.4rem;
+  }
+
+  .blog__cards-posts-comment {
+    font-size: 1.6rem;
+  }
+
+  .blog__cards-posts-user-id {
+    font-size: 1.4rem;
+  }
+
+  .blog__downer-buttons-load-more-btn {
+    width: 15rem;
+    height: 5.3rem;
+    font-size: 1.4rem;
   }
 }

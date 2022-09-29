@@ -29,6 +29,7 @@ body {
   font-family: var(--open-sans-r);
   height: 100vh;
   line-height: 1.4;
+  height: 1000rem;
 }
 
 a {
@@ -850,5 +851,80 @@ ul {
 
 .blog__downer-buttons-load-more-btn:hover {
   background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* --Rss-- */
+.rss-news-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 1.2rem;
+  padding: 7rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.rss-news-form::before {
+  content: url("../images/svgs/shape.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rss-news-form__contents {
+  margin-bottom: 5rem;
+  z-index: 1;
+}
+
+.rss-news-form__title {
+  max-width: 72rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.rss-news-form__form-wrapper {
+  z-index: 1;
+}
+
+.rss-news-form__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rss-news-form__email-input {
+  width: 37rem;
+  height: 6rem;
+  background-color: var(--white);
+  border-radius: 24rem;
+  padding: 2rem 3rem;
+  margin-right: 2.4rem;
+  font-size: 1.8rem;
+  outline: none;
+  border: none;
+  font-family: var(--open-sans-r);
+}
+
+.rss-news-form__email-input::placeholder {
+  color: var(--black);
+}
+
+.rss-news-form__submitation-button {
+  width: 19rem;
+  height: 6rem;
+  background-color: var(--secondary-color);
+  border-radius: 24rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  transition: all 250ms ease-in;
+}
+
+.rss-news-form__submitation-button:hover {
+  background-color: transparent;
+  border: 0.2rem solid var(--secondary-color);
   color: var(--white);
 }

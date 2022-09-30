@@ -330,6 +330,7 @@ ul {
 /* ---Main--- */
 .main {
   margin-top: 10rem;
+  margin-bottom: 12%;
 }
 
 /* --Services-- */
@@ -927,4 +928,89 @@ ul {
   background-color: transparent;
   border: 0.2rem solid var(--secondary-color);
   color: var(--white);
+}
+
+/* ---Footer--- */
+.footer {
+}
+
+.footer__contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-outro {
+  color: var(--text-color);
+  width: 50%;
+}
+
+.footer-outro__info {
+  max-width: 30rem;
+  line-height: 2.8rem;
+  margin: 4rem 0 6.4rem 0;
+}
+
+.footer-credits-title {
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+  font-family: var(--open-sans-b);
+}
+
+.footer-outro__container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15rem;
+  width: 50%;
+}
+
+.footer-credits-links {
+  width: fit-content;
+  color: var(--text-color);
+  margin-bottom: 3.2rem;
+  display: block;
+  transition: all 250ms ease-in;
+}
+
+.footer-credits-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  margin-top: 0.3rem;
+  transition: all 250ms ease-in;
+}
+
+.footer-credits-links:hover::after {
+  width: 100%;
+}
+
+.footer-credits-links:hover {
+  color: var(--primary-color);
+}
+
+.footer-credits-links:nth-of-type(3) {
+  margin: 0;
+}
+
+.footer-credits-links--hiring {
+  position: relative;
+}
+
+.footer-credits-links--hiring::before {
+  content: "Hiring!";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 3rem;
+  background-color: var(--secondary-color);
+  font-family: var(--open-sans-b);
+  border-radius: 5rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  right: -8rem;
+  transform: translateY(-60%);
 }

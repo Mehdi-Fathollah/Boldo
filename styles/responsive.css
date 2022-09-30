@@ -8,6 +8,11 @@
   .rss-news-form__submitation-button {
     width: 18rem;
   }
+
+  /* Footer Responsive */
+  .footer-outro__container {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1200px) {
   /* Header Content Responsive */
@@ -160,6 +165,15 @@
   .rss-news-form__email-input,
   .rss-news-form__submitation-button {
     font-size: 1.7rem;
+  }
+
+  /* Footer Responsive */
+  .footer-outro svg {
+    width: 14.7rem;
+  }
+
+  .footer-credits-title {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 992px) {
@@ -367,6 +381,33 @@
     margin: 0 auto 4rem auto;
     width: 40rem;
   }
+
+  /* Footer Responsive */
+  .footer-outro svg {
+    width: 14.4rem;
+  }
+
+  .footer-outro__info {
+    margin-bottom: 3rem;
+    max-width: 23rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-outro__copyright,
+  .footer-credits-links {
+    font-size: 1.5rem;
+  }
+
+  .footer-credits-title {
+    font-size: 1.8rem;
+  }
+
+  .footer-credits-links--hiring::before {
+    width: 6rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    right: -6.5rem;
+  }
 }
 @media (max-width: 768px) {
   /* --Nav Responsive-- */
@@ -398,6 +439,10 @@
   }
 
   /* Section Services Responsive */
+  .main {
+    margin-bottom: 11rem;
+  }
+
   .services__caption {
     font-size: 3.4rem;
     max-width: 49rem;
@@ -484,6 +529,26 @@
     width: 15rem;
     height: 5.5rem;
     font-size: 1.5rem;
+  }
+
+  /* Footer Responsive */
+  .footer-outro {
+    width: 100%;
+  }
+
+  .footer__contents {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-outro__container {
+    width: 100%;
+    margin-top: 7rem;
+  }
+
+  .footer-outro__info {
+    margin: 4rem 0 2.5rem 0;
+    max-width: 49rem;
   }
 }
 @media (max-width: 576px) {
@@ -709,6 +774,49 @@
     width: 14rem;
     font-size: 1.45rem;
   }
+
+  /* Footer Responsive */
+  .footer-outro svg {
+    width: 13.8rem;
+  }
+
+  .footer-outro__info {
+    max-width: 32rem;
+    font-size: 1.45rem;
+  }
+
+  .footer-outro__copyright {
+    font-size: 1.45rem;
+  }
+
+  .footer-outro__container {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  .footer-credits-section-one,
+  .footer-credits-section-two,
+  .footer-credits-section-three {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-credits-title {
+    font-size: 1.7rem;
+  }
+
+  .footer-credits-links {
+    font-size: 1.45rem;
+  }
+
+  .footer-credits-links--hiring::before {
+    font-size: 1rem;
+    width: 5rem;
+    right: -5.5rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -908,5 +1016,27 @@
     width: 13rem;
     height: 5.2rem;
     font-size: 1.3rem;
+  }
+
+  /* Blog Responsive */
+  .footer-outro svg {
+    width: 13.4rem;
+  }
+
+  .footer-outro__info {
+    max-width: 28rem;
+    font-size: 1.35rem;
+  }
+
+  .footer-outro__copyright {
+    font-size: 1.35rem;
+  }
+
+  .footer-credits-links {
+    font-size: 1.4rem;
+  }
+
+  .footer-credits-title {
+    font-size: 1.65rem;
   }
 }

@@ -29,7 +29,6 @@ body {
   font-family: var(--open-sans-r);
   height: 100vh;
   line-height: 1.4;
-  height: 1000rem;
 }
 
 a {
@@ -70,7 +69,17 @@ ul {
   background-color: var(--primary-color);
   color: var(--white);
   padding-top: 5rem;
-  height: 80rem;
+  padding-bottom: 6.5rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.header::after {
+  content: url("../images/svgs/header-shape.svg");
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* --Nav-- */
@@ -80,9 +89,14 @@ ul {
   justify-content: space-between;
 }
 
+.nav svg {
+  z-index: 1;
+}
+
 .nav__right {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .nav-list {
@@ -122,6 +136,7 @@ ul {
   bottom: 0;
   left: -25rem;
   transition: all 150ms ease-in;
+  z-index: 2;
 }
 
 .mobile-nav-list {
@@ -194,6 +209,7 @@ ul {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 1;
 }
 
 .nav-ham-menu__line {
@@ -250,6 +266,7 @@ ul {
 
 .header-left {
   max-width: 50%;
+  z-index: 1;
 }
 
 .header-left__title {
@@ -300,6 +317,7 @@ ul {
 
 .header-right {
   max-width: 50%;
+  z-index: 1;
 }
 
 .header-right__wrapper {
@@ -308,24 +326,39 @@ ul {
 }
 
 .header-right__img {
+  display: block;
   width: 100%;
   height: 100%;
 }
 
 /* --header brands-- */
 .header-brands {
+  position: relative;
   margin-top: 9rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  display: none;
+  cursor: grab;
+  overflow: hidden;
+  width: 90%;
+  height: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-mask-image: linear-gradient(to right, #0000, #000, #000, #0000);
 }
 
-.header-brands__img {
-  flex-grow: 1;
+.header-brands__img-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  pointer-events: none;
+  transform: translateY(-50%);
 }
+
+/* .header-brands__img {
+  flex-grow: 1;
+} */
 
 /* ---Main--- */
 .main {
@@ -336,7 +369,7 @@ ul {
 /* --Services-- */
 .services {
   text-align: center;
-  margin-bottom: 12rem;
+  margin-bottom: 20rem;
 }
 
 .services__title {
@@ -355,19 +388,24 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
 }
 
 .services-box {
   width: auto;
-  height: 57rem;
+  height: auto;
   border-radius: 2.4rem;
   text-align: start;
 }
 
-.services-box__img {
+.services-box__img-wrapper {
   margin-bottom: 2rem;
+}
+
+.services-box__img {
+  width: 100%;
+  height: 100%;
 }
 
 .services-box__title {
@@ -662,6 +700,7 @@ ul {
   border-radius: 1.2rem;
   padding: 4rem;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+  flex-grow: 1;
 }
 
 .testimonials-box__title {
@@ -932,6 +971,7 @@ ul {
 
 /* ---Footer--- */
 .footer {
+  padding-bottom: 10rem;
 }
 
 .footer__contents {

@@ -54,3 +54,44 @@ function boundCards() {
     cards.style.left = `-${cards_rect.width - container_rect.width}px`;
   }
 }
+
+// Testimonials Box Slider
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+  loop: false,
+  grabCursor: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 15,
+    },
+    992: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 25,
+    },
+  },
+});

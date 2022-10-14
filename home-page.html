@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boldo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/container.css" />
@@ -1090,7 +1094,7 @@
               An enterprise template to ramp up your company website
             </h2>
             <div class="testimonials__btns">
-              <button class="testimonials__btn">
+              <button class="swiper-button-prev testimonials__btn">
                 <svg
                   width="24"
                   height="24"
@@ -1104,7 +1108,7 @@
                   />
                 </svg>
               </button>
-              <button class="testimonials__btn">
+              <button class="swiper-button-next testimonials__btn">
                 <svg
                   width="24"
                   height="24"
@@ -1120,73 +1124,213 @@
               </button>
             </div>
           </div>
-          <div class="testimonials__downer">
-            <div class="testimonials-box">
-              <h4 class="testimonials-box__title">
-                “Buyer buzz partner network disruptive non-disclosure agreement
-                business”
-              </h4>
-              <div class="testimonials-box-user-informations">
-                <div class="testimonials-box-user-informations__profile">
-                  <img
-                    src="./images/profile-img-1.png"
-                    alt="User Profile One"
-                    class="testimonials-box-user-informations__profile-img"
-                  />
-                </div>
-                <div class="testimonials-box-user-informations__user-name">
-                  <h5 class="testimonials-box-user-informations__name">
-                    Albus Dumbledore
-                  </h5>
-                  <p class="testimonials-box-user-informations__id">
-                    Manager @ Howarts
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonials-box">
-              <h4 class="testimonials-box__title">
-                “Learning curve infrastructure value proposition advisor
-                strategy user experience hypotheses investor.”
-              </h4>
-              <div class="testimonials-box-user-informations">
-                <div class="testimonials-box-user-informations__profile">
-                  <img
-                    src="./images/profile-img-2.png"
-                    alt="User Profile One"
-                    class="testimonials-box-user-informations__profile-img"
-                  />
-                </div>
-                <div class="testimonials-box-user-informations__user-name">
-                  <h5 class="testimonials-box-user-informations__name">
-                    Severus Snape
-                  </h5>
-                  <p class="testimonials-box-user-informations__id">
-                    Manager @ Slytherin
-                  </p>
+          <div class="swiper mySwiper testimonials__downer">
+            <div class="swiper-wrapper testimonials__box-wrapper">
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Buyer buzz partner network disruptive non-disclosure
+                  agreement business”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-1.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Albus Dumbledore
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Howarts
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="testimonials-box">
-              <h4 class="testimonials-box__title">
-                “Release facebook responsive web design business model canvas
-                seed money monetization.”
-              </h4>
-              <div class="testimonials-box-user-informations">
-                <div class="testimonials-box-user-informations__profile">
-                  <img
-                    src="./images/profile-img-3.png"
-                    alt="User Profile One"
-                    class="testimonials-box-user-informations__profile-img"
-                  />
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Learning curve infrastructure value proposition advisor
+                  strategy user experience hypotheses investor.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-2.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Severus Snape
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Slytherin
+                    </p>
+                  </div>
                 </div>
-                <div class="testimonials-box-user-informations__user-name">
-                  <h5 class="testimonials-box-user-informations__name">
-                    Harry Potter
-                  </h5>
-                  <p class="testimonials-box-user-informations__id">
-                    Team Leader @ Gryffindor
-                  </p>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Release facebook responsive web design business model canvas
+                  seed money monetization.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-3.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Harry Potter
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Team Leader @ Gryffindor
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Buyer buzz partner network disruptive non-disclosure
+                  agreement business”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-1.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Albus Dumbledore
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Howarts
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Learning curve infrastructure value proposition advisor
+                  strategy user experience hypotheses investor.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-2.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Severus Snape
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Slytherin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Release facebook responsive web design business model canvas
+                  seed money monetization.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-3.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Harry Potter
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Team Leader @ Gryffindor
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Buyer buzz partner network disruptive non-disclosure
+                  agreement business”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-1.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Albus Dumbledore
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Howarts
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Learning curve infrastructure value proposition advisor
+                  strategy user experience hypotheses investor.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-2.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Severus Snape
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Manager @ Slytherin
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-box">
+                <h4 class="testimonials-box__title">
+                  “Release facebook responsive web design business model canvas
+                  seed money monetization.”
+                </h4>
+                <div class="testimonials-box-user-informations">
+                  <div class="testimonials-box-user-informations__profile">
+                    <img
+                      src="./images/profile-img-3.png"
+                      alt="User Profile One"
+                      class="testimonials-box-user-informations__profile-img"
+                    />
+                  </div>
+                  <div class="testimonials-box-user-informations__user-name">
+                    <h5 class="testimonials-box-user-informations__name">
+                      Harry Potter
+                    </h5>
+                    <p class="testimonials-box-user-informations__id">
+                      Team Leader @ Gryffindor
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1446,6 +1590,7 @@
     </footer>
 
     <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

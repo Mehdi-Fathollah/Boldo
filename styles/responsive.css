@@ -410,11 +410,20 @@
 
   .rss-news-form__form {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .rss-news-form-email_wrapper {
+    margin-right: 0;
   }
 
   .rss-news-form__email-input {
-    margin: 0 auto 4rem auto;
+    margin: 0 auto 1rem auto;
     width: 40rem;
+  }
+
+  .rss-news-form__submitation-button {
+    margin-top: 2.5rem;
   }
 
   /* Footer Responsive */
@@ -1130,7 +1139,7 @@
     font-size: 1.3rem;
   }
 
-  /* Blog Responsive */
+  /* Footer Responsive */
   .footer-outro svg {
     width: 13.4rem;
   }

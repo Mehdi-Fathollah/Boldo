@@ -18,14 +18,14 @@ navHam.addEventListener("click", function () {
 
 // Header Brands Slider
 const container = document.querySelector(".header-brands");
-const cards = document.querySelector(".header-brands__img-container");
+const brands = document.querySelector(".header-brands__img-container");
 
 let isPressedDown = false;
 let cursorXSpace;
 
 container.addEventListener("mousedown", (e) => {
   isPressedDown = true;
-  cursorXSpace = e.offsetX - cards.offsetLeft;
+  cursorXSpace = e.offsetX - brands.offsetLeft;
   container.style.cursor = "grabbing";
 });
 
@@ -40,18 +40,18 @@ window.addEventListener("mouseup", () => {
 container.addEventListener("mousemove", (e) => {
   if (!isPressedDown) return;
   e.preventDefault();
-  cards.style.left = `${e.offsetX - cursorXSpace}px`;
+  brands.style.left = `${e.offsetX - cursorXSpace}px`;
   boundCards();
 });
 
 function boundCards() {
-  const container_rect = container.getBoundingClientRect();
-  const cards_rect = cards.getBoundingClientRect();
+  const containerRect = container.getBoundingClientRect();
+  const brandsRect = brands.getBoundingClientRect();
 
-  if (parseInt(cards.style.left) > 0) {
-    cards.style.left = 0;
-  } else if (cards_rect.right < container_rect.right) {
-    cards.style.left = `-${cards_rect.width - container_rect.width}px`;
+  if (parseInt(brands.style.left) > 0) {
+    brands.style.left = 0;
+  } else if (brandsRect.right < containerRect.right) {
+    brands.style.left = `-${brandsRect.width - containerRect.width}px`;
   }
 }
 
@@ -95,3 +95,51 @@ let swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// Customer Call Center Accordion
+const accordionContent = document.querySelectorAll(
+  ".customer-call-center__contents-option"
+);
+
+accordionContent.forEach((item, index) => {
+  let upper = item.querySelector(
+    ".customer-call-center__contents-option__upper"
+  );
+  upper.addEventListener("click", () => {
+    item.classList.toggle("customer-call-center__contents-option--open");
+
+    let description = item.querySelector(
+      ".customer-call-center__contents-option__description"
+    );
+    if (
+      item.classList.contains("customer-call-center__contents-option--open")
+    ) {
+      description.style.height = `${description.scrollHeight}px`;
+      item.querySelector(
+        ".customer-call-center__contents-option__icon-wrapper"
+      ).style.transform = "rotate(-180deg)";
+    } else {
+      description.style.height = "0px";
+      item.querySelector(
+        ".customer-call-center__contents-option__icon-wrapper"
+      ).style.transform = "rotate(360deg)";
+    }
+    removeOpen(index);
+  });
+});
+
+function removeOpen(index1) {
+  accordionContent.forEach((item2, index2) => {
+    if (index1 != index2) {
+      item2.classList.remove("customer-call-center__contents-option--open");
+
+      let des = item2.querySelector(
+        ".customer-call-center__contents-option__description"
+      );
+      des.style.height = "0px";
+      item2.querySelector(
+        ".customer-call-center__contents-option__icon-wrapper"
+      ).style.transform = "rotate(360deg)";
+    }
+  });
+}

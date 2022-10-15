@@ -1,0 +1,25 @@
+/* Open Sans */
+@font-face {
+  font-family: "open-sans-r";
+  src: url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open-sans-sb";
+  src: url("../fonts/Open-Sans/OpenSans-Semibold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open-sans-b";
+  src: url("../fonts/Open-Sans/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* Manrope */
+@font-face {
+  font-family: "manrope-r";
+  src: url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+}

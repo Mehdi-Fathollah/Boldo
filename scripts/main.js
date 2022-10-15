@@ -68,7 +68,7 @@ let swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 4000,
+    delay: 3000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
@@ -199,19 +199,7 @@ successClose.onclick = function () {
   email.value = "";
 };
 
-success.onclick = function () {
-  success.classList.remove("successful-alert-overlay--show");
-  danger.classList.remove("rss-news-form-empty-field-alert-text--show");
-  validEmail.classList.remove("rss-news-form-valid-alert-text--show");
-  inValidEmail.classList.remove("rss-news-form-failed-alert-text--show");
-  formButton.classList.add("rss-news-form__submitation-button--disabled");
-  document.body.style.overflowY = "auto";
-  formButton.disabled = true;
-  email.disabled = true;
-  email.value = "";
-};
-
-//* Preventing 'form' from refreshing the page
+// Preventing 'form' from refreshing the page
 function refresher() {
   event.preventDefault();
 }
